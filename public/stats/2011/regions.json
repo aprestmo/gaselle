@@ -1,0 +1,56 @@
+[
+  {
+    "ansatte": 58263,
+    "befolkning": 5370519,
+    "gaseller": 1964,
+    "navn": "Norge",
+    "omsetning": 0,
+    "per_10k": 3.66,
+    "rid": 0
+  },
+  {
+    "ansatte": 31468,
+    "befolkning": 2306044,
+    "gaseller": 885,
+    "navn": "\u00d8st",
+    "omsetning": 0,
+    "per_10k": 3.84,
+    "rid": 1
+  },
+  {
+    "ansatte": 2696,
+    "befolkning": 726627,
+    "gaseller": 202,
+    "navn": "S\u00f8r",
+    "omsetning": 0,
+    "per_10k": 2.78,
+    "rid": 2
+  },
+  {
+    "ansatte": 11099,
+    "befolkning": 1116423,
+    "gaseller": 405,
+    "navn": "Vest",
+    "omsetning": 0,
+    "per_10k": 3.63,
+    "rid": 3
+  },
+  {
+    "ansatte": 9059,
+    "befolkning": 733940,
+    "gaseller": 282,
+    "navn": "Midt",
+    "omsetning": 0,
+    "per_10k": 3.84,
+    "rid": 4
+  },
+  {
+    "ansatte": 3941,
+    "befolkning": 487485,
+    "gaseller": 190,
+    "navn": "Nord",
+    "omsetning": 0,
+    "per_10k": 3.9,
+    "rid": 5
+  }
+]

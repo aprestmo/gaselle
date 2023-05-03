@@ -1,0 +1,19 @@
+{
+  "name": "gaselle",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "token-engine:fetch": "figma-token-engine",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^2.3.4"
+  },
+  "devDependencies": {
+    "figma-token-engine": "^0.1.0"
+  }
+}

@@ -1,0 +1,132 @@
+[
+  {
+    "ansatte": 133112,
+    "befolkning": 5370519,
+    "fid": 0,
+    "gaseller": 4138,
+    "navn": "Norge",
+    "omsetning": 0,
+    "per_10k": 0,
+    "rid": 0
+  },
+  {
+    "ansatte": 39888,
+    "befolkning": 693494,
+    "fid": 3,
+    "gaseller": 649,
+    "navn": "Oslo",
+    "omsetning": 0,
+    "per_10k": 9.36,
+    "rid": 1
+  },
+  {
+    "ansatte": 14304,
+    "befolkning": 479892,
+    "fid": 11,
+    "gaseller": 479,
+    "navn": "Rogaland",
+    "omsetning": 0,
+    "per_10k": 9.98,
+    "rid": 3
+  },
+  {
+    "ansatte": 6103,
+    "befolkning": 265238,
+    "fid": 15,
+    "gaseller": 251,
+    "navn": "M\u00f8re og Romsdal",
+    "omsetning": 0,
+    "per_10k": 9.46,
+    "rid": 4
+  },
+  {
+    "ansatte": 4046,
+    "befolkning": 241235,
+    "fid": 18,
+    "gaseller": 165,
+    "navn": "Nordland",
+    "omsetning": 0,
+    "per_10k": 6.84,
+    "rid": 5
+  },
+  {
+    "ansatte": 3,
+    "befolkning": 2939,
+    "fid": 21,
+    "gaseller": 2,
+    "navn": "Svalbard",
+    "omsetning": 0,
+    "per_10k": 6.81,
+    "rid": 5
+  },
+  {
+    "ansatte": 29747,
+    "befolkning": 1241165,
+    "fid": 30,
+    "gaseller": 902,
+    "navn": "Viken",
+    "omsetning": 0,
+    "per_10k": 7.27,
+    "rid": 1
+  },
+  {
+    "ansatte": 2404,
+    "befolkning": 371385,
+    "fid": 34,
+    "gaseller": 191,
+    "navn": "Innlandet",
+    "omsetning": 0,
+    "per_10k": 5.14,
+    "rid": 1
+  },
+  {
+    "ansatte": 8865,
+    "befolkning": 419396,
+    "fid": 38,
+    "gaseller": 310,
+    "navn": "Vestfold og Telemark",
+    "omsetning": 0,
+    "per_10k": 7.39,
+    "rid": 2
+  },
+  {
+    "ansatte": 5413,
+    "befolkning": 307231,
+    "fid": 42,
+    "gaseller": 260,
+    "navn": "Agder",
+    "omsetning": 0,
+    "per_10k": 8.46,
+    "rid": 2
+  },
+  {
+    "ansatte": 13697,
+    "befolkning": 636531,
+    "fid": 46,
+    "gaseller": 515,
+    "navn": "Vestland",
+    "omsetning": 0,
+    "per_10k": 8.09,
+    "rid": 3
+  },
+  {
+    "ansatte": 5726,
+    "befolkning": 468702,
+    "fid": 50,
+    "gaseller": 268,
+    "navn": "Tr\u00f8ndelag",
+    "omsetning": 0,
+    "per_10k": 5.72,
+    "rid": 4
+  },
+  {
+    "ansatte": 2916,
+    "befolkning": 243311,
+    "fid": 54,
+    "gaseller": 146,
+    "navn": "Troms og Finnmark",
+    "omsetning": 0,
+    "per_10k": 6.0,
+    "rid": 5
+  }
+]

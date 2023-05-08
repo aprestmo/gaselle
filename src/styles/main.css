@@ -1,0 +1,32 @@
+@layer reset, app;
+
+@import url('../../node_modules/the-new-css-reset/css/reset.css') layer(reset);
+
+@layer app {
+  body {
+    font-family: system-ui;
+    padding: 3rem;
+  }
+
+  [aria-current='page'] {
+    text-decoration: underline;
+  }
+
+  nav {
+    margin-block-end: 3em;
+  }
+
+
+  ul {
+    column-gap: 1em;
+    display: flex;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

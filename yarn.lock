@@ -3198,6 +3198,11 @@ synckit@^0.8.4:
     "@pkgr/utils" "^2.3.1"
     tslib "^2.5.0"
 
+the-new-css-reset@^1.8.4:
+  version "1.8.4"
+  resolved "https://registry.yarnpkg.com/the-new-css-reset/-/the-new-css-reset-1.8.4.tgz#f503e8eb98746f32175a484f1044ae116bbd6994"
+  integrity sha512-Upmb9XTyk78BmTbMQuAOTlESH9zmwqDAmmYC9MVm7uZLQdvGfxFTMhbpjKMUDwfmXGKnq6nkzISs/ReqHUP5xg==
+
 tiny-glob@^0.2.9:
   version "0.2.9"
   resolved "https://registry.yarnpkg.com/tiny-glob/-/tiny-glob-0.2.9.tgz#2212d441ac17928033b110f8b3640683129d31e2"

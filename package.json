@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "@astrojs/node": "^5.1.2",
-    "astro": "^2.3.3"
+    "astro": "^2.3.3",
+    "the-new-css-reset": "^1.8.4"
   },
   "devDependencies": {
     "figma-token-engine": "^0.1.0"

@@ -1,0 +1,27 @@
+---
+// component imports
+import Link from '../atoms/Link.astro';
+
+// data imports
+import navData from '../data/navData';
+---
+
+<nav aria-label="Primary">
+  <ul>
+    {
+      navData.map(item => (
+        <li>
+          <Link
+            text={item.name}
+            href={item.path}
+            data-navLink
+          />
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<script>
+  import '../js/nav.js';
+</script>

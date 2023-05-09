@@ -4,7 +4,6 @@ import '../styles/main.css';
 
 // component imports
 import Header from '../organisms/Header.astro';
-import Nav from '../molecules/Navigation.astro';
 
 export interface Props {
   title: string;
@@ -12,7 +11,6 @@ export interface Props {
 
 const { title } = Astro.props;
 
-// const canonicalURL = Astro.url;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const siteDescription = 'Møt bedriftene som vokser mest i Norge og lær av deres erfaringer';
 ---
@@ -29,9 +27,7 @@ const siteDescription = 'Møt bedriftene som vokser mest i Norge og lær av dere
     <link rel="stylesheet" href="https://static1.dn.no/dn/static/assets/css/nhstfonts.css">
   </head>
   <body>
-    <Header>
-      <Nav />
-    </Header>
+    <Header />
     <slot />
   </body>
 </html>

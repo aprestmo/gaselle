@@ -1,6 +1,7 @@
 import { defineConfig } from "astro/config";
 import sanity from "astro-sanity";
 import netlify from "@astrojs/netlify/functions";
+import compress from "astro-compress";
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,6 +12,6 @@ export default defineConfig({
     dataset: "development",
     apiVersion: "2023-05-09",
     useCdn: true
-  })],
-  site: "https://gaselle-2023.netlify.app",
+  }), compress()],
+  site: "https://gaselle-2023.netlify.app"
 });

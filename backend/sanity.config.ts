@@ -8,7 +8,7 @@ export default defineConfig({
   title: 'Gaselle',
 
   projectId: '4awmkexx',
-  dataset: 'production',
+  dataset: 'development',
 
   plugins: [deskTool(), visionTool()],
 

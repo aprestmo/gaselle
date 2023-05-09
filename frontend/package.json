@@ -11,8 +11,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/node": "^5.1.2",
-    "astro": "^2.4.3",
+    "@astrojs/netlify": "^2.2.2",
+    "astro": "^2.2.1",
+    "astro-sanity": "^1.1.7",
     "the-new-css-reset": "^1.8.4"
   },
   "devDependencies": {

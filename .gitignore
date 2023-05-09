@@ -35,3 +35,6 @@ api/obj/
 *.njsproj
 *.sln
 *.sw?
+
+# Local Netlify folder
+.netlify

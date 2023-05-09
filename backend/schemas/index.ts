@@ -1,1 +1,3 @@
-export const schemaTypes = []
+import settings from './settings'
+
+export const schemaTypes = [settings]

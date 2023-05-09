@@ -13,4 +13,5 @@
     output_path = "reports/lighthouse.html"
 
 [functions]
+  directory = ".netlify/functions"
   external_node_modules = ["astro", "svgo"]

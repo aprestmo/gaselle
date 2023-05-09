@@ -17,6 +17,7 @@
     "the-new-css-reset": "^1.8.4"
   },
   "devDependencies": {
+    "astro-icon": "^0.8.0",
     "figma-token-engine": "^0.1.0"
   }
 }

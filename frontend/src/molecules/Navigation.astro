@@ -36,4 +36,29 @@ import navData from '../data/navData';
     flex-wrap: wrap;
     gap: 1rem;
   }
+
+
+a {
+  background: linear-gradient(0deg, currentColor, currentColor) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 300ms ease-out;
+  --bg-h: 1px;
+	/*touch-action: manipulation; -- finn ut av denne */
+	-webkit-tap-highlight-color:transparent;
+}
+a:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+}
+
+.underline {
+  padding-bottom: 4px;
+  --bg-h: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+	padding-block-end: 4px;
+}
 </style>

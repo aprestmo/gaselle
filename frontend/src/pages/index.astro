@@ -1,12 +1,21 @@
 ---
 import Layout from '../templates/Layout.astro';
 
+import { getSiteSettings } from '../lib/api';
+
+const settings = await getSiteSettings();
+console.log(settings)
+
 export const prerender = true;
 ---
 
-<Layout title="">
+<Layout title="Yolo">
   <main>
     <h1>Forsiden</h1>
+    {settings.map((setting: any) => (
+      <pre>{setting}</pre>
+    ))}
+
   </main>
 </Layout>
 

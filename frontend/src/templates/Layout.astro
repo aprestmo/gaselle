@@ -3,6 +3,7 @@
 import '../styles/main.css';
 
 // component imports
+import Header from '../organisms/Header.astro';
 import Nav from '../molecules/Navigation.astro';
 
 export interface Props {
@@ -23,7 +24,9 @@ const { title } = Astro.props;
     <link rel="stylesheet" href="https://static1.dn.no/dn/static/assets/css/nhstfonts.css">
   </head>
   <body>
-    <Nav />
+    <Header>
+      <Nav />
+    </Header>
     <slot />
   </body>
 </html>

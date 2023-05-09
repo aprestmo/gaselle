@@ -1,3 +1,3 @@
-import settings from './settings'
+import frontPage from './frontPage'
 
-export const schemaTypes = [settings]
+export const schemaTypes = [frontPage]

@@ -11,5 +11,6 @@ export default defineConfig({
     dataset: "development",
     apiVersion: "2023-05-09",
     useCdn: true
-  })]
+  })],
+  site: "https://gaselle-2023.netlify.app",
 });

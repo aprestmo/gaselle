@@ -13,7 +13,7 @@ export interface Props {
 const { title } = Astro.props;
 
 // const canonicalURL = Astro.url;
-const canonicalURL = new URL(Astro.url.pathname, Astro.url.origin);
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const siteDescription = 'Møt bedriftene som vokser mest i Norge og lær av deres erfaringer';
 ---
 

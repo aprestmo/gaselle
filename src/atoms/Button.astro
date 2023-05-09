@@ -1,0 +1,35 @@
+---
+export interface Props {
+  text: string;
+  type: string;
+}
+
+const { text, type } = Astro.props;
+---
+
+<button {type}>{text}</button>
+
+<style>
+  button {
+    --_button-background: 0 0% 0%;
+    --_button-background-alpha: 1;
+    --_button-radii: 0.25rem;
+    --_button-text-color: hsl(var(--white, 0 0% 100%));
+
+    background-color: hsl(var(--_button-background) / var(--_button-background-alpha));
+    border-radius: var(--_button-radii);
+    color: var(--_button-text-color);
+    cursor: pointer;
+    font-family: 'Book21', sans-serif;
+    font-size: 1rem;
+    line-height: 1;
+    padding-block: 1.25rem;
+    padding-inline: 2.5rem;
+    transition: background-color 360ms linear;
+  }
+
+  button:focus-visible,
+  button:hover {
+    --_button-background-alpha: 0.5;
+  }
+</style>

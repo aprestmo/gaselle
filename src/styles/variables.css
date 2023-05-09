@@ -1,0 +1,16 @@
+:root {
+  /* Raw values */
+  --brand-blue: 219 59% 18%;
+  --black: 216 7% 15%;
+  --white: 0 0% 100%;
+  --peach-orange: 26 100% 87%;
+  --back-in-black: 220 26% 9%;
+
+  /* Semantic */
+  --body-background: var(--white);
+  --body-color-text: var(--black);
+
+  --newsletter-background: var(--peach-orange);
+
+  --transparent-black-background: var(--back-in-black);
+}

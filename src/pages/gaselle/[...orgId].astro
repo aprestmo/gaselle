@@ -1,0 +1,18 @@
+---
+import Layout from "../../templates/Layout.astro";
+
+// data imports
+import pages from '../../data/profiles.json';
+
+const { orgId } = Astro.params;
+const page = pages.find((page) => page.orgId === orgId);
+if (!page) return Astro.redirect("/404");
+const { name, municipality, sectors, county } = page;
+---
+
+<Layout title={`Gaselle: ${name}`}>
+  <h1>{name}</h1>
+  <p>{sectors[0].value}</p>
+  { county === 'Oslo' ? <p>{municipality}</p> : <p>{municipality}, {county}</p> }
+</Layout>
+

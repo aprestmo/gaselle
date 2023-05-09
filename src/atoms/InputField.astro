@@ -1,0 +1,19 @@
+---
+export interface Props {
+  type: string;
+  placeholder: string;
+}
+
+const { type, placeholder } = Astro.props;
+---
+<input {type} {placeholder}>
+
+<style>
+  input {
+    --_input-background: var(--_newsletter-searchfield-background);
+
+    background-color: hsl(var(--_input-background) / 0.1);
+    border-radius: 0.25rem;
+    padding-inline: 1.5rem;
+  }
+</style>

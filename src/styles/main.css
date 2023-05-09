@@ -1,25 +1,19 @@
-@layer reset, app;
+@layer reset, variables, app;
 
 @import url('../../node_modules/the-new-css-reset/css/reset.css') layer(reset);
 
+@import url('variables.css') layer(variables);
+
 @layer app {
   body {
-    font-family: system-ui;
+    --_body-background: var(--body-background, hsl(0 0% 100%));
+    --_body-color-text: var(--body-color-text, hsl(0 0% 0%));
+
+    background-color: (--_body-background);
+    color: var(--_body-color-text);
+    font-family: 'Book20', system-ui, sans-serif;
+    line-height: 1.5;
     padding: 3rem;
-  }
-
-  [aria-current='page'] {
-    text-decoration: underline;
-  }
-
-  nav {
-    margin-block-end: 3em;
-  }
-
-
-  ul {
-    column-gap: 1em;
-    display: flex;
   }
 
   h1 {
@@ -27,6 +21,6 @@
   }
 
   a {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }

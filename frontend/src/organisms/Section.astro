@@ -1,0 +1,23 @@
+---
+// import SectionHeader from '../molecules/SectionHeader.astro';
+import Grid from '../atoms/Grid.astro';
+
+export interface Props {
+  sectionBg?: string;
+  grid?: string;
+}
+
+const { sectionBg, grid, ...rest } = Astro.props;
+---
+
+<section aria-labelledby="den h-taggen som kommer nedenfor her" data-bg={sectionBg} {...rest}>
+  <Grid {grid}>
+    <slot/>
+  </Grid>
+</section>
+
+<style>
+  section {
+    border-radius: clamp(1rem, 0.455rem + 2.73vw, 2.5rem);
+  }
+</style>

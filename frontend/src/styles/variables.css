@@ -3,8 +3,12 @@
   --brand-blue: 219 59% 18%;
   --black: 216 7% 15%;
   --white: 0 0% 100%;
-  --peach-orange: 26 100% 87%;
   --back-in-black: 220 26% 9%;
+
+  --peach-orange: 26 100% 87%;
+  --fresh-pink: 320 95% 93%;
+  --calm-purple: 245 100% 96%;
+  --energic-green: 145 71% 91%;
 
   /* Semantic */
   --body-background: var(--white);
@@ -13,4 +17,7 @@
   --newsletter-background: var(--peach-orange);
 
   --transparent-black-background: var(--back-in-black);
+
+  --graph-gradient-start: 218 40% 93%;
+  --graph-gradient-end: 245 88% 96%;
 }

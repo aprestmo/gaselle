@@ -1,0 +1,17 @@
+---
+export interface Props {
+  grid: string;
+}
+
+const { grid } = Astro.props;
+---
+<div data-layout={grid}>
+  <slot/>
+</div>
+
+<style>
+  div {
+    inline-size: min(700px, 100vw - 2rem);
+    margin-inline: auto;
+  }
+</style>

@@ -9,8 +9,6 @@ import compress from "astro-compress";
 export default defineConfig({
   output: "server",
   adapter: netlify(),
-  site: "https://www.dn.no",
-  base: "prosjekter/gaselle-2023/",
   integrations: [
     sanity({
       projectId: "4awmkexx",

@@ -13,10 +13,75 @@
     color: var(--_body-color-text);
     font-family: 'Book20', system-ui, sans-serif;
     line-height: 1.5;
-    padding: 3rem;
+    padding-block: 3rem;
   }
 
   h1 {
     font-size: 2em;
   }
+
+  h2 {
+    font-weight: 700;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  main {
+    display: grid;
+    gap: 100px;
+  }
+}
+
+@layer layout {
+
+  [data-bg='orange'] {
+    --_section-background-color: ;
+    background-color: hsl(var(--peach-orange));
+  }
+
+  [data-bg='pink'] {
+    background-color: hsl(var(--fresh-pink));
+  }
+
+  [data-bg='purple'] {
+    background-color: hsl(var(--calm-purple));
+  }
+
+  [data-bg='green'] {
+    background-color: hsl(var(--energic-green));
+  }
+
+  [data-bg='black'] {
+    background-color: hsl(0 0% 0%);
+    color: hsl(0 0% 100%);
+  }
+
+  [data-bg='smoke'] {
+    background-color: hsl(217 20% 13%);
+    color: hsl(0 0% 100%);
+  }
+
+  /* Alternativ metodikk med flex */
+  [data-layout='5-1-6'] {
+    display: flex;
+
+    & > :first-child {
+      flex: 1 1
+    }
+  }
+  /* [data-layout="5-1-6"] {
+    display: grid;
+    grid-template-areas: 'text . image';
+    grid-template-columns: 5fr 1fr 6fr;
+
+    & > :first-child {
+      grid-area: text;
+    }
+
+    & > :last-child {
+      grid-area: image;
+    }
+  } */
 }

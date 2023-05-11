@@ -1,31 +1,28 @@
 ---
 // style imports
-import '../styles/main.css';
+import "../styles/main.css";
 
 // component imports
-import Header from '../organisms/Header.astro';
+import Header from "../organisms/Header.astro";
 
 export interface Props {
   title: string;
 }
 
 const { title } = Astro.props;
-
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const siteDescription = 'Møt bedriftene som vokser mest i Norge og lær av deres erfaringer';
 ---
 
 <!DOCTYPE html>
 <html lang="nb-NO">
   <head>
-    <base href={Astro.url.pathname}>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     {/* <meta name="color-scheme" content="light dark"> */}
     <title>{title}</title>
-    <meta name="description" content={siteDescription}>
-    <link rel="canonical" href={canonicalURL}>
-    {/* <link rel="stylesheet" href="https://static1.dn.no/dn/static/assets/css/nhstfonts.css"> */}
+    <meta name="description" content="Møt bedriftene som vokser mest i Norge og lær av deres erfaringer">
+    {
+      /* <link rel="stylesheet" href="https://static1.dn.no/dn/static/assets/css/nhstfonts.css"> */
+    }
   </head>
   <body>
     <Header />

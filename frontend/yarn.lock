@@ -10,6 +10,15 @@
     "@jridgewell/gen-mapping" "^0.3.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
+"@astro-aws/adapter@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@astro-aws/adapter/-/adapter-0.3.0.tgz#ac4db1c64eb2215ca6deae0fb578efbff801d415"
+  integrity sha512-11tz/msigkaX5ZXNS3SJX9+DgJJ/nB4NPZ3utJQFzMGxRw9ZWwuKqOGZoQtPF2jfyb/EDClIWaumLcK3KqDWMg==
+  dependencies:
+    "@astrojs/webapi" "^2.0.1"
+    esbuild "^0.17.8"
+    merge-anything "^5.1.4"
+
 "@astrojs/compiler@^1.0.1", "@astrojs/compiler@^1.3.2":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-1.4.0.tgz#192a6b09d848595337b35fc9e007d359ad5e1825"
@@ -68,6 +77,15 @@
     "@netlify/functions" "^1.0.0"
     esbuild "^0.15.18"
 
+"@astrojs/node@^5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@astrojs/node/-/node-5.1.2.tgz#053ba6d39aac799f48928aed8759cbf648df99b9"
+  integrity sha512-tDApFnU99O3KQXaRUmfwbkdxqgJhNvPDWou4CVBpybVm3xruigMfz5c+H9P2f4vRo0+sYTzof1L3Hzx9Rh9sQA==
+  dependencies:
+    "@astrojs/webapi" "^2.1.1"
+    send "^0.18.0"
+    server-destroy "^1.0.1"
+
 "@astrojs/prism@^2.1.0":
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/@astrojs/prism/-/prism-2.1.1.tgz#5f6ae1ab5b630889a8850ba2c991888ed92a3c7a"
@@ -89,7 +107,7 @@
     undici "^5.22.0"
     which-pm-runs "^1.1.0"
 
-"@astrojs/webapi@^2.1.0", "@astrojs/webapi@^2.1.1":
+"@astrojs/webapi@^2.0.1", "@astrojs/webapi@^2.1.0", "@astrojs/webapi@^2.1.1":
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/@astrojs/webapi/-/webapi-2.1.1.tgz#965bcc35a72ca40e60e1ed4c2e4350f215bee179"
   integrity sha512-mHZ7VgPNMeV3TYIw3SGHTKaJosBxA8bTzZ3QhNw509qvCJca4Lkjes8JywimuwTn+TMjEiv7ksNfwRluad3jqA==
@@ -1080,7 +1098,66 @@ astro-sanity@^1.1.7:
     astro "^2.3.3"
     groq "^2.33.2"
 
-astro@^2.2.1, astro@^2.3.3:
+astro@^2.2.1:
+  version "2.4.4"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-2.4.4.tgz#8e38e8575a4764e01c8ced13cbfe6379bb3fdfef"
+  integrity sha512-2DFxcnZySS/OzBbiuWpoVGJBikcHfbwO5xmk5ohItswoMs+PfZ5P/B6mXplTjaosjm3M43c0OIsd8Mq6UksQZQ==
+  dependencies:
+    "@astrojs/compiler" "^1.4.0"
+    "@astrojs/language-server" "^1.0.0"
+    "@astrojs/markdown-remark" "^2.2.0"
+    "@astrojs/telemetry" "^2.1.1"
+    "@astrojs/webapi" "^2.1.1"
+    "@babel/core" "^7.18.2"
+    "@babel/generator" "^7.18.2"
+    "@babel/parser" "^7.18.4"
+    "@babel/plugin-transform-react-jsx" "^7.17.12"
+    "@babel/traverse" "^7.18.2"
+    "@babel/types" "^7.18.4"
+    "@types/babel__core" "^7.1.19"
+    "@types/yargs-parser" "^21.0.0"
+    acorn "^8.8.2"
+    boxen "^6.2.1"
+    chokidar "^3.5.3"
+    ci-info "^3.3.1"
+    common-ancestor-path "^1.0.1"
+    cookie "^0.5.0"
+    debug "^4.3.4"
+    deepmerge-ts "^4.2.2"
+    devalue "^4.2.0"
+    diff "^5.1.0"
+    es-module-lexer "^1.1.0"
+    estree-walker "3.0.0"
+    execa "^6.1.0"
+    fast-glob "^3.2.11"
+    github-slugger "^2.0.0"
+    gray-matter "^4.0.3"
+    html-escaper "^3.0.3"
+    kleur "^4.1.4"
+    magic-string "^0.27.0"
+    mime "^3.0.0"
+    ora "^6.1.0"
+    path-to-regexp "^6.2.1"
+    preferred-pm "^3.0.3"
+    prompts "^2.4.2"
+    rehype "^12.0.1"
+    semver "^7.3.8"
+    server-destroy "^1.0.1"
+    shiki "^0.14.1"
+    slash "^4.0.0"
+    string-width "^5.1.2"
+    strip-ansi "^7.0.1"
+    supports-esm "^1.0.0"
+    tsconfig-resolver "^3.0.1"
+    typescript "*"
+    unist-util-visit "^4.1.0"
+    vfile "^5.3.2"
+    vite "^4.3.1"
+    vitefu "^0.2.4"
+    yargs-parser "^21.0.1"
+    zod "^3.20.6"
+
+astro@^2.3.3:
   version "2.4.3"
   resolved "https://registry.yarnpkg.com/astro/-/astro-2.4.3.tgz#7a81437c816b7bfc0864ed6da575146491a34b0e"
   integrity sha512-WU7sMkgFNQs4WZzEmpjOYZthcT8+LSmwIR0GvWzVYlb+dIMfFCQyg99LNHdhg/XZKi08ztaHmRf4ZBjJvZHsgA==
@@ -2206,7 +2283,7 @@ esbuild@^0.15.18:
     esbuild-windows-64 "0.15.18"
     esbuild-windows-arm64 "0.15.18"
 
-esbuild@^0.17.5:
+esbuild@^0.17.5, esbuild@^0.17.8:
   version "0.17.18"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.17.18.tgz#f4f8eb6d77384d68cd71c53eb6601c7efe05e746"
   integrity sha512-z1lix43jBs6UKjcZVKOw2xx69ffE2aG0PygLL5qJ9OS/gy0Ewd1gW/PUQIOIQGXBHWNywSc0floSKoMFF8aK2w==
@@ -3053,6 +3130,11 @@ is-unicode-supported@^1.1.0:
   resolved "https://registry.yarnpkg.com/is-unicode-supported/-/is-unicode-supported-1.3.0.tgz#d824984b616c292a2e198207d4a609983842f714"
   integrity sha512-43r2mRvz+8JRIKnWJ+3j8JtjRKZ6GmjzfaE/qiBJnikNnYv/6bagRJ1kUhNk8R5EX/GkobD+r+sfxCPJsiKBLQ==
 
+is-what@^4.1.8:
+  version "4.1.9"
+  resolved "https://registry.yarnpkg.com/is-what/-/is-what-4.1.9.tgz#f834685d9ffd63f7e56cea3d48b14910c03b8010"
+  integrity sha512-I3FU0rkVvwhgLLEs6iITwZ/JaLXe7tQcHyzupXky8jigt1vu4KM0UOqDr963j36JRvJ835EATVIm6MnGz/i1/g==
+
 is-wsl@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/is-wsl/-/is-wsl-2.2.0.tgz#74a4c76e77ca9fd3f932f290c17ea326cd157271"
@@ -3452,6 +3534,13 @@ media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==
+
+merge-anything@^5.1.4:
+  version "5.1.6"
+  resolved "https://registry.yarnpkg.com/merge-anything/-/merge-anything-5.1.6.tgz#24897e55ffd686ee45f87392c5e1d9eeb9258ac1"
+  integrity sha512-0SIP3417t0sOL6/crPb6oC+ZNSMrjJeWkydlddgZVzsjQA86l8v3+f3WwvKanbsHxVF80QouJIdSh+Q249bu0g==
+  dependencies:
+    is-what "^4.1.8"
 
 merge-descriptors@1.0.1:
   version "1.0.1"
@@ -4645,7 +4734,7 @@ semver@^7.3.5, semver@^7.3.8:
   dependencies:
     lru-cache "^6.0.0"
 
-send@0.18.0:
+send@0.18.0, send@^0.18.0:
   version "0.18.0"
   resolved "https://registry.yarnpkg.com/send/-/send-0.18.0.tgz#670167cc654b05f5aa4a767f9113bb371bc706be"
   integrity sha512-qqWzuOjSFOuqPjFe4NOsMLafToQQwBSOEpS+FwEt3A2V3vKubTquT3vmLTQpFgMXp8AlFWFuP1qKaJZOtPpVXg==

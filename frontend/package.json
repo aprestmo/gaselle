@@ -8,10 +8,14 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "aws s3 cp dist/ s3://rl-staticprojects-nhst-dn-staticprojects-saeghiereetah1va/gaselle-2023/ --recursive --profile nhst",
+    "deploy:remove": "aws s3 rm s3://rl-staticprojects-nhst-dn-staticprojects-saeghiereetah1va/gaselle-2023/ --recursive --profile nhst"
   },
   "dependencies": {
+    "@astro-aws/adapter": "^0.3.0",
     "@astrojs/netlify": "^2.2.2",
+    "@astrojs/node": "^5.1.2",
     "astro": "^2.2.1",
     "astro-compress": "^1.1.42",
     "astro-sanity": "^1.1.7",

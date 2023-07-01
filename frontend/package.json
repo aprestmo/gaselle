@@ -13,9 +13,7 @@
     "deploy:remove": "aws s3 rm s3://rl-staticprojects-nhst-dn-staticprojects-saeghiereetah1va/gaselle-2023/ --recursive --profile nhst"
   },
   "dependencies": {
-    "@astro-aws/adapter": "^0.3.0",
     "@astrojs/netlify": "^2.3.0",
-    "@astrojs/node": "^5.2.0",
     "astro": "^2.6.5",
     "astro-compress": "^1.1.47",
     "astro-sanity": "^1.1.7",

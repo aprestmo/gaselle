@@ -1,17 +1,17 @@
 @layer reset, variables, app;
 
-@import url('../../node_modules/the-new-css-reset/css/reset.css') layer(reset);
-
-@import url('variables.css') layer(variables);
+@import url("../../node_modules/the-new-css-reset/css/reset.css") layer(reset);
+@import url("variables.css") layer(variables);
 
 @layer app {
   body {
+    --foo-: red;
     --_body-background: var(--body-background, hsl(0 0% 100%));
     --_body-color-text: var(--body-color-text, hsl(0 0% 0%));
 
     background-color: (--_body-background);
     color: var(--_body-color-text);
-    font-family: 'Book20', system-ui, sans-serif;
+    font-family: "Book20", system-ui, sans-serif;
     line-height: 1.5;
     padding-block: 3rem;
   }
@@ -35,40 +35,51 @@
 }
 
 @layer layout {
-
-  [data-bg='orange'] {
+  [data-bg="orange"] {
     --_section-background-color: ;
     background-color: hsl(var(--peach-orange));
   }
 
-  [data-bg='pink'] {
+  [data-bg="pink"] {
     background-color: hsl(var(--fresh-pink));
   }
 
-  [data-bg='purple'] {
+  [data-bg="purple"] {
     background-color: hsl(var(--calm-purple));
   }
 
-  [data-bg='green'] {
+  [data-bg="green"] {
     background-color: hsl(var(--energic-green));
   }
 
-  [data-bg='black'] {
+  [data-bg="black"] {
     background-color: hsl(0 0% 0%);
     color: hsl(0 0% 100%);
   }
 
-  [data-bg='smoke'] {
+  [data-bg="smoke"] {
     background-color: hsl(217 20% 13%);
     color: hsl(0 0% 100%);
   }
 
   /* Alternativ metodikk med flex */
-  [data-layout='5-1-6'] {
+  [data-layout="5-1-6"] {
     display: flex;
 
     & > :first-child {
-      flex: 1 1
+      flex: 1 1;
     }
+  }
+}
+
+input {
+  &::placeholder,
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &:-ms-input-placeholder,
+  &:-moz-placeholder {
+    color: var(--_color-core-secondary);
+    font-weight: bold;
+    font-style: italic;
   }
 }

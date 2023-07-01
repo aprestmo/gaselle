@@ -71,17 +71,4 @@
       flex: 1 1
     }
   }
-  /* [data-layout="5-1-6"] {
-    display: grid;
-    grid-template-areas: 'text . image';
-    grid-template-columns: 5fr 1fr 6fr;
-
-    & > :first-child {
-      grid-area: text;
-    }
-
-    & > :last-child {
-      grid-area: image;
-    }
-  } */
 }

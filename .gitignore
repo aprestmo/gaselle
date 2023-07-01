@@ -20,10 +20,6 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
-.vscode
-api/bin/
-api/obj/
-
 # local env files
 .env.local
 .env.*.local

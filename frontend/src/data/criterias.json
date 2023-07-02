@@ -1,0 +1,26 @@
+[
+  {
+    "criterion": "Levert godkjente regnskaper",
+    "icon": "ThumbsUp"
+  },
+  {
+    "criterion": "Positivt samlet driftsresultat",
+    "icon": "Smiley"
+  },
+  {
+    "criterion": "Minst doblet omsetningen over fire år",
+    "icon": "X2"
+  },
+  {
+    "criterion": "Unngått fallende omsetning",
+    "icon": "Bars"
+  },
+  {
+    "criterion": "Omsetning på over en million kroner første år",
+    "icon": "Plant"
+  },
+  {
+    "criterion": "Har vært aksjeselskap",
+    "icon": "As"
+  }
+]

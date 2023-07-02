@@ -23,7 +23,7 @@
   "devDependencies": {
     "@netlify/plugin-lighthouse": "^4.1.1",
     "astro-icon": "^0.8.1",
-    "figma-token-engine": "^0.1.1",
+    "figma-token-engine": "^0.2.0-alpha.2",
     "postcss": "^8.4.24",
     "postcss-preset-env": "^8.5.0",
     "rome": "12.1.3",

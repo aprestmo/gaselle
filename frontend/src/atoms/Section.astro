@@ -1,0 +1,22 @@
+---
+export interface Props {
+  tag?: string;
+}
+
+const { tag = "section", ...rest } = Astro.props;
+const Element = tag;
+---
+
+<Element {...rest} data-section>
+  <slot />
+</Element>
+
+<style is:global>
+  [data-section] {
+    --_section-background-color: var(--section-background-color);
+    --_section-foreground-color: var(--section-foreground-color);
+
+    background-color: var(--_section-background-color);
+    color: var(--_section-foreground-color);
+  }
+</style>

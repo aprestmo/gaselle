@@ -2,83 +2,21 @@
 
 @import url("../../node_modules/the-new-css-reset/css/reset.css") layer(reset);
 @import url("variables.css") layer(variables);
+@layer variables.semantic {
+  :root {
+    --section-background-color: oklch(100% 0 0);
+    --section-foreground-color: oklch(0% 0 0);
+  }
+}
 
 @layer app {
   body {
-    --foo-: red;
-    --_body-background: var(--body-background, hsl(0 0% 100%));
-    --_body-color-text: var(--body-color-text, hsl(0 0% 0%));
+    --_body-background: var(--body-background);
+    --_body-color-text: var(--body-color-text);
 
-    background-color: (--_body-background);
+    background-color: var(--_body-background);
     color: var(--_body-color-text);
     font-family: "Book20", system-ui, sans-serif;
     line-height: 1.5;
-  }
-
-  /* h1 {
-    font-size: 2em;
-  }
-
-  h2 {
-    font-weight: 700;
-  }
-
-  a {
-    text-decoration: underline;
-  }
-
-  main {
-    display: grid;
-    gap: 100px;
-  } */
-}
-
-@layer layout {
-  [data-bg="orange"] {
-    --_section-background-color: ;
-    background-color: hsl(var(--peach-orange));
-  }
-
-  [data-bg="pink"] {
-    background-color: hsl(var(--fresh-pink));
-  }
-
-  [data-bg="purple"] {
-    background-color: hsl(var(--calm-purple));
-  }
-
-  [data-bg="green"] {
-    background-color: hsl(var(--energic-green));
-  }
-
-  [data-bg="black"] {
-    background-color: hsl(0 0% 0%);
-    color: hsl(0 0% 100%);
-  }
-
-  [data-bg="smoke"] {
-    background-color: hsl(217 20% 13%);
-    color: hsl(0 0% 100%);
-  }
-
-  /* Alternativ metodikk med flex */
-  [data-layout="5-1-6"] {
-    display: flex;
-
-    & > :first-child {
-      flex: 1 1;
-    }
-  }
-}
-
-input {
-  &::placeholder,
-  &::-webkit-input-placeholder,
-  &::-moz-placeholder,
-  &:-ms-input-placeholder,
-  &:-moz-placeholder {
-    color: var(--_color-core-secondary);
-    font-weight: bold;
-    font-style: italic;
   }
 }

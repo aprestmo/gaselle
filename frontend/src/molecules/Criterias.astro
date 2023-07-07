@@ -9,29 +9,20 @@ import Title from "@atoms/Title.astro";
 import Text from "@atoms/Text.astro";
 import List from "@atoms/List.astro";
 import ListItem from "@atoms/ListItem.astro";
-import Link from "@atoms/Link.astro";
 
 // Data imports
-import partners from "@data/partners.json";
-
-export interface Props {
-  tagline?: Boolean;
-}
-
-const { tagline } = Astro.props;
+import criterias from "@data/criterias.json";
 ---
 
 <Section>
   <Grid>
-    <Title content="Våre partnere" />
+    <Title content="Kriterier for gasellebedrifter" />
     <List role="list">
       {
-        partners.map((item) => (
+        criterias.map((item) => (
           <ListItem>
-            <Link url={item.url}>
-              <Icon name={item.icon.name} width={item.icon.size} />
-              {tagline && <Text content={item.tagline} tag="small" />}
-            </Link>
+            <Icon name={item.icon.name} height={item.icon.size} />
+            <Text content={item.criterion} tag="small" />
           </ListItem>
         ))
       }
@@ -41,7 +32,6 @@ const { tagline } = Astro.props;
 
 <style>
   [data-section] {
-    --section-background-color: var(--black);
-    --section-foreground-color: var(--white);
+    --_section-background-color: var(--black);
   }
 </style>

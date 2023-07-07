@@ -1,26 +1,44 @@
 [
   {
     "criterion": "Levert godkjente regnskaper",
-    "icon": "ThumbsUp"
+    "icon": {
+      "name": "thumbs-up",
+      "size": "32"
+    }
   },
   {
     "criterion": "Positivt samlet driftsresultat",
-    "icon": "Smiley"
+    "icon": {
+      "name": "smiley",
+      "size": "32"
+    }
   },
   {
     "criterion": "Minst doblet omsetningen over fire år",
-    "icon": "X2"
+    "icon": {
+      "name": "x2",
+      "size": "24"
+    }
   },
   {
     "criterion": "Unngått fallende omsetning",
-    "icon": "Bars"
+    "icon": {
+      "name": "bars",
+      "size": "32"
+    }
   },
   {
     "criterion": "Omsetning på over en million kroner første år",
-    "icon": "Plant"
+    "icon": {
+      "name": "plant",
+      "size": "32"
+    }
   },
   {
     "criterion": "Har vært aksjeselskap",
-    "icon": "As"
+    "icon": {
+      "name": "as",
+      "size": "24"
+    }
   }
 ]

@@ -1,8 +1,8 @@
 :root {
   /* Raw values */
   --brand-blue: 219 59% 18%;
-  --black: 216 7% 15%;
-  --white: 0 0% 100%;
+  --black: oklch(26.65% 0.007 258.36);
+  --white: oklch(100% 0 0);
   --back-in-black: 220 26% 9%;
 
   --peach-orange: 26 100% 87%;

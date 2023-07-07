@@ -13,10 +13,9 @@
     color: var(--_body-color-text);
     font-family: "Book20", system-ui, sans-serif;
     line-height: 1.5;
-    padding-block: 3rem;
   }
 
-  h1 {
+  /* h1 {
     font-size: 2em;
   }
 
@@ -31,7 +30,7 @@
   main {
     display: grid;
     gap: 100px;
-  }
+  } */
 }
 
 @layer layout {

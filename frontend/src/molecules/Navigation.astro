@@ -1,21 +1,17 @@
 ---
 // component imports
-import Link from '../atoms/Link.astro';
+import Link from "../atoms/Link.astro";
 
 // data imports
-import navData from '../data/navData';
+import navData from "../data/navData";
 ---
 
 <nav aria-label="Primary">
   <ul>
     {
-      navData.map(item => (
+      navData.map((item) => (
         <li>
-          <Link
-            text={item.name}
-            href={item.path}
-            data-navLink
-          />
+          <Link content={item.name} url={item.path} data-navLink />
         </li>
       ))
     }
@@ -23,7 +19,7 @@ import navData from '../data/navData';
 </nav>
 
 <script>
-  import '../js/nav.js';
+  import "../js/nav.js";
 </script>
 
 <style>
@@ -37,28 +33,28 @@ import navData from '../data/navData';
     gap: 1rem;
   }
 
+  a {
+    background: linear-gradient(0deg, currentColor, currentColor) no-repeat
+      right bottom / 0 var(--bg-h);
+    transition: background-size 300ms ease-out;
+    --bg-h: 1px;
+    /*touch-action: manipulation; -- finn ut av denne */
+    -webkit-tap-highlight-color: transparent;
+  }
+  a:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+  }
 
-a {
-  background: linear-gradient(0deg, currentColor, currentColor) no-repeat right bottom / 0 var(--bg-h);
-  transition: background-size 300ms ease-out;
-  --bg-h: 1px;
-	/*touch-action: manipulation; -- finn ut av denne */
-	-webkit-tap-highlight-color:transparent;
-}
-a:where(:hover, :focus-visible) {
-  background-size: 100% var(--bg-h);
-  background-position-x: left;
-}
+  .underline {
+    padding-bottom: 4px;
+    --bg-h: 1px;
+  }
 
-.underline {
-  padding-bottom: 4px;
-  --bg-h: 1px;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  line-height: 1;
-	padding-block-end: 4px;
-}
+  a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    padding-block-end: 4px;
+  }
 </style>

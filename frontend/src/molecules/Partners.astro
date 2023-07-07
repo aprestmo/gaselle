@@ -1,0 +1,32 @@
+---
+// Atom imports
+import Link from "@atoms/Link.astro";
+import List from "@atoms/List.astro";
+import ListItem from "@atoms/ListItem.astro";
+import Text from "@atoms/Text.astro";
+
+// Icon imports
+import { Icon } from "astro-icon";
+
+// Data imports
+import partners from "@data/partners.json";
+
+export interface Props {
+  tagline?: Boolean;
+}
+
+const { tagline } = Astro.props;
+---
+
+<List>
+  {
+    partners.map((item) => (
+      <ListItem>
+        <Link url={item.url}>
+          <Icon name={item.icon.name} width={item.icon.size} />
+          {tagline && <Text content={item.tagline} tag="small" />}
+        </Link>
+      </ListItem>
+    ))
+  }
+</List>

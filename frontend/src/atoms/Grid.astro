@@ -1,17 +1,28 @@
 ---
 export interface Props {
-  grid: string;
+  tag?: string;
 }
 
-const { grid } = Astro.props;
+const { tag = "div" } = Astro.props as Props;
+const Element = tag;
 ---
-<div data-layout={grid}>
-  <slot/>
-</div>
+
+<Element data-grid>
+  <slot />
+</Element>
 
 <style>
-  div {
-    inline-size: min(700px, 100vw - 2rem);
+  [data-grid] {
+    --grid-max-size: 1416px;
+    --grid-padding-inline: 2rem;
+
+    --_grid-max-size: var(--grid-max-size);
+    --_grid-padding-inline: var(--grid-padding-inline);
+
+    inline-size: min(
+      var(--_grid-max-size),
+      100vw - var(--_grid-padding-inline)
+    );
     margin-inline: auto;
   }
 </style>

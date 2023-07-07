@@ -1,0 +1,39 @@
+---
+// Atom imports
+import Grid from "@atoms/Grid.astro";
+import Title from "@atoms/Title.astro";
+import Text from "@atoms/Text.astro";
+import Link from "@atoms/Link.astro";
+
+// Molecules imports
+import Partners from "@molecules/Partners.astro";
+
+// Icon imports
+import { Icon } from "astro-icon";
+---
+
+<footer>
+  <Grid>
+    <Title tag="h3" content="Gaselle" />
+    <Icon name="gaselle" width="80" />
+    <Text
+      content="Landets mest prestisjefylte prisutdeling, møteplass og kunnskapsarena for små og mellomstore vekstbedrifter som vokser raskest i Norge."
+    />
+    <!-- Nav -->
+
+    <Partners />
+    <Link url="//www.dn.no">
+      <Icon name="dagens-naeringsliv" width="190" />
+    </Link>
+  </Grid>
+
+  <style>
+    footer {
+      background-color: black;
+      color: white;
+
+      inset-block-end: 0;
+      position: sticky;
+    }
+  </style>
+</footer>

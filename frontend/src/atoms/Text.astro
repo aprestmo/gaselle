@@ -1,0 +1,16 @@
+---
+export interface Props {
+  content: string;
+  tag?: string;
+}
+
+const { content, tag = "p" } = Astro.props;
+
+const Element = tag;
+---
+
+<Element>
+  <slot name="before-title" />
+  {content}
+  <slot name="after-title" />
+</Element>

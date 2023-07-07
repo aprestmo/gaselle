@@ -1,0 +1,15 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+interface Props extends HTMLAttributes<"ul"> {
+  tag?: string;
+}
+
+const { tag = "ul" } = Astro.props;
+
+const Element = tag;
+---
+
+<Element>
+  <slot />
+</Element>

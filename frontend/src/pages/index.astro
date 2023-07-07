@@ -1,11 +1,11 @@
 ---
-import Layout from '../templates/Layout.astro';
+import Layout from "../templates/Layout.astro";
 
-import Section from '../organisms/Section.astro';
+import Section from "../organisms/Section.astro";
 
-import Link from '../atoms/Link.astro';
-import Criterias from '../organisms/Criterias.astro';
-import Partners from '../organisms/Partners.astro';
+import Link from "../atoms/Link.astro";
+import Criterias from "../organisms/Criterias.astro";
+import Partners from "@molecules/Partners.astro";
 
 export const prerender = true;
 ---
@@ -13,16 +13,15 @@ export const prerender = true;
 <Layout title="Gaselle | DN">
   <main>
     <h1>Forsiden</h1>
-    <Section>
-      Stats
-    </Section>
+    <Section>Stats</Section>
     <Section sectionBg="pink" grid="5-1-6">
-      <figure>
-        Her er det et bilde
-      </figure>
+      <figure>Her er det et bilde</figure>
       <div>
         <h2 id="">Gasellene er 20 år</h2>
-        <p>Vi har satt sammen All Time High for å hedre de mest lønnsomme og hurtigvoksende bedriftene i landet.</p>
+        <p>
+          Vi har satt sammen All Time High for å hedre de mest lønnsomme og
+          hurtigvoksende bedriftene i landet.
+        </p>
         <Link href="#" text="Hall of fame" />
       </div>
     </Section>
@@ -34,12 +33,13 @@ export const prerender = true;
       <div>Artikler fra Lanterne</div>
     </Section>
     <Section sectionBg="green">
-      <figure>
-        Her er det et bilde
-      </figure>
+      <figure>Her er det et bilde</figure>
       <div>
         <h2>Registrer din bedrift og få Gasellediplom</h2>
-        <p>Få Gasellediplom, egen profilside og delta i kåring av årets Gaselle-innovatør</p>
+        <p>
+          Få Gasellediplom, egen profilside og delta i kåring av årets
+          Gaselle-innovatør
+        </p>
         <Link href="#" text="Registrer bedrift" />
       </div>
     </Section>
@@ -50,17 +50,15 @@ export const prerender = true;
     <Section>
       <h2>Kriterier for gasellebedrifter</h2>
       <ol>
-        <Criterias/>
+        <Criterias />
       </ol>
     </Section>
     <Section sectionBg="smoke">
       <h2>Våre partnere</h2>
-      <ul>
-        <Partners />
-      </ul>
+      <Partners tagline />
+      <ul></ul>
     </Section>
   </main>
 </Layout>
 
-<style>
-</style>
+<style></style>

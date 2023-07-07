@@ -2,31 +2,55 @@
   {
     "name": "Formue",
     "url": "//www.formue.no",
-    "tagline": "Kompetansepartner med ett klart mål om å skape flere Gaseller i Norge"
+    "tagline": "Kompetansepartner med ett klart mål om å skape flere Gaseller i Norge",
+    "icon": {
+      "name": "formue",
+      "size": "84"
+    }
   },
   {
     "name": "Grant Thornton",
     "url": "//www.grantthornton.no",
-    "tagline": "Kompetansepartner med ett klart mål om å skape flere Gaseller i Norge"
+    "tagline": "Kompetansepartner med ett klart mål om å skape flere Gaseller i Norge",
+    "icon": {
+      "name": "grant-thornton",
+      "size": "107"
+    }
   },
   {
     "name": "iSandnes",
     "url": "//www.isandnes.no",
-    "tagline": "Kompetansepartner med ett klart mål om å skape flere Gaseller i Norge"
+    "tagline": "Kompetansepartner med ett klart mål om å skape flere Gaseller i Norge",
+    "icon": {
+      "name": "isandnes",
+      "size": "52"
+    }
   },
   {
     "name": "NoA",
     "url": "//www.thenorthalliance.no",
-    "tagline": "Kompetansepartner med ett klart mål om å skape flere Gaseller i Norge"
+    "tagline": "Kompetansepartner med ett klart mål om å skape flere Gaseller i Norge",
+    "icon": {
+      "name": "noa",
+      "size": "40"
+    }
   },
   {
     "name": "Tripletex",
     "url": "//www.tripletex.no",
-    "tagline": "Kompetansepartner med ett klart mål om å skape flere Gaseller i Norge"
+    "tagline": "Kompetansepartner med ett klart mål om å skape flere Gaseller i Norge",
+    "icon": {
+      "name": "tripletex",
+      "size": "70"
+    }
   },
   {
     "name": "Bring",
     "url": "//www.bring.no",
-    "tagline": "Kompetansepartner med ett klart mål om å skape flere Gaseller i Norge"
+    "tagline": "Kompetansepartner med ett klart mål om å skape flere Gaseller i Norge",
+    "icon": {
+      "name": "bring",
+      "size": "57"
+    }
   }
 ]
